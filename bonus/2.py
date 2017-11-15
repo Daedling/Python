@@ -7,36 +7,36 @@ mn = 0
 tag = True
 a = 'i'
 num = {'1','2','3','4','5','6','7','8','9','0','-'}
-print('Ââîäèòå ÷èñëà ïîñòðî÷íî')
-while(a != '')
+print('Ð’Ð²Ð¾Ð´Ð¸Ñ‚Ðµ Ñ‡Ð¸ÑÐ»Ð° Ð¿Ð¾ÑÑ‚Ñ€Ð¾Ñ‡Ð½Ð¾')
+while(a != ''):
     a = input(str())
-    if a == '' and gcnt==0
-        print('Íåò ÷èñåë')
+    if a == '' and gcnt==0:
+        print('ÐÐµÑ‚ Ñ‡Ð¸ÑÐµÐ»')
         tag = False
         break
-    for i in a
+    for i in a:
         cnt += 1
-        if i not in num or (i=='-' and (cnt != 1 or len(a) = 1))
-            print(conditions wrong)
+        if i not in num or (i=='-' and (cnt != 1 or len(a) >= 1)):
+            print('conditions wrong')
             tag = False
             break
     cnt = 0
     gcnt += 1
-    if gcnt  1 and tag == False
-        print(Âñåãî ÷èñåë +str(am)+nÑóììà ÷èñåë +str(to)+nÑðåäíåå àðèô. +str(toam)+nÍàèáîëüøåå ÷èñëî +str(mx)+nÍàèìåíüøåå ÷èñëî +str(mn))
-    if tag == False
+    if gcnt > 1 and tag == False:
+        print('Ð’ÑÐµÐ³Ð¾ Ñ‡Ð¸ÑÐµÐ» '+str(am)+'\nÐ¡ÑƒÐ¼Ð¼Ð° Ñ‡Ð¸ÑÐµÐ» '+str(to)+'\nÐ¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„. '+str(to/am)+'\nÐÐ°Ð¸Ð±Ð¾Ð»ÑŒÑˆÐµÐµ Ñ‡Ð¸ÑÐ»Ð¾ '+str(mx)+'\nÐÐ°Ð¸Ð¼ÐµÐ½ÑŒÑˆÐµÐµ Ñ‡Ð¸ÑÐ»Ð¾ '+str(mn))
+    if tag == False:
         break
-    if a !=''
+    if a !='':
         to+=int(a)
         am+=1
-        if gcnt==1
+        if gcnt==1:
            mx = int(a) 
            mn = int(a)     
-        else
-            if int(a) mx
+        else:
+            if int(a)> mx:
                 mx = int(a)
-            if int(a) mn
+            if int(a)< mn:
                 mn = int(a)
 
-if tag == True    
-    print(Âñåãî ÷èñåë +str(am)+nÑóììà ÷èñåë +str(to)+nÑðåäíåå àðèô. +str(toam)+nÍàèáîëüøåå ÷èñëî +str(mx)+nÍàèìåíüøåå ÷èñëî +str(mn))
+if tag == True:    
+    print('Ð’ÑÐµÐ³Ð¾ Ñ‡Ð¸ÑÐµÐ» '+str(am)+'\nÐ¡ÑƒÐ¼Ð¼Ð° Ñ‡Ð¸ÑÐµÐ» '+str(to)+'\nÐ¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„. '+str(to/am)+'\nÐÐ°Ð¸Ð±Ð¾Ð»ÑŒÑˆÐµÐµ Ñ‡Ð¸ÑÐ»Ð¾ '+str(mx)+'\nÐÐ°Ð¸Ð¼ÐµÐ½ÑŒÑˆÐµÐµ Ñ‡Ð¸ÑÐ»Ð¾ '+str(mn))
