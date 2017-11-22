@@ -6,7 +6,6 @@ print('Имя фаила должно иметь вид "text.exe", пустые
 with open('text.txt', encoding ='utf-8') as txt:
     k = txt.readlines()
 if len (k) == 0:
-    print ("Нет")
     a=1
 if a!=1:
     for i in k:
