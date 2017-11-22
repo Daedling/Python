@@ -2,7 +2,7 @@ r=[]
 a=0
 b=0
 c=0
-print('Имя фаила должно иметь вид "text.exe", пустые фаилы не принимаются')
+print('Имя фаила должно иметь вид "text.txt", пустые фаилы не принимаются')
 with open('text.txt', encoding ='utf-8') as txt:
     k = txt.readlines()
 if len (k) == 0:
