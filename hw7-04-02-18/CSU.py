@@ -26,7 +26,7 @@ def checknum():
     num=['1','2','3','4','5','6','7','8','9','0']
     a=''
     while flag == 0:
-        a=input("Введите цифру или End для завершения ")
+        a=input("Введите цифру или End для завершения: ")
         if a !='':
             flag = 1
             for b in a:
@@ -49,5 +49,10 @@ def check(lst,num):
         else:
             return print(('no match'))
     return print('Конец')
-check(fun(op()), checknum())
+
+def main():   
+    return (check(fun(op()), checknum()))
+
+if __name__  ==  '__main__':
+    main() 
             
