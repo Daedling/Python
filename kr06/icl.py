@@ -89,10 +89,10 @@ class Box(Shape):
 
 ball = Ball(1)
 pyr=Pyramid(1,1)
-print(ball.get_volume()) # 33.51
+print(ball.get_volume())
 print(pyr.get_volume())
 box = Box(20)
-print(box.get_volume()) # 0
+print(box.get_volume())
 box.add(pyr)
 print(box.get_volume())
 box.add(ball)
