@@ -18,7 +18,7 @@ class Pyramid(Shape):
         self.h = float(h)
 
     def get_volume(self):
-        if self.s >= 0 and self.s * self.h >= 0:
+        if self.s > 0 and self.s * self.h > 0:
             return self.s * self.h / 3
         else:
             raise ValueError
@@ -42,7 +42,7 @@ class Ball(SolidOfRevolution):
         self.r = float(r)
 
     def get_volume(self):
-        if self.r >= 0:
+        if self.r > 0:
             return self.r ** 3 * 4 / 3 * self.pi
         else:
             raise ValueError
@@ -56,7 +56,7 @@ class Cylinder(SolidOfRevolution):
 
     def get_volume(self):
 
-        if self.r >= 0 and self.r * self.h >= 0:
+        if self.r > 0 and self.r * self.h > 0:
             return self.pi * 2 * self.r * self.h
         else:
             raise ValueError
